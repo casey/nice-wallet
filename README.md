@@ -35,6 +35,11 @@ The primary benefits of the architecture are:
 
 ### Notes
 
+- Can wallets use HD-wallet like technique to deterministically derive state?
+  Each provider would have to provide some seed input, for checking state on
+  that provider. If you could derive a token, you could blind it and ask the
+  provider if it was valid. However you wouldn't know the amount, which might
+  be necessary to derive full token.
 - Do it in rust, so it's fast, secure, and can be used by mobile wallets
 - abstract over providers with API (can move from custodial to non custodial
   and back easily)
