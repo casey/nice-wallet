@@ -35,6 +35,7 @@ The primary benefits of the architecture are:
 
 ### Notes
 
+- How to recieve funds with static string? LN-URL compatibility?
 - Can wallets use HD-wallet like technique to deterministically derive state?
   Each provider would have to provide some seed input, for checking state on
   that provider. If you could derive a token, you could blind it and ask the
