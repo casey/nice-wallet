@@ -22,17 +22,6 @@ The primary benefits of the architecture are:
 - Wallet backends do not know how many users they have, or what their balances
   are.
 
-## Notes, To-Do, and Junk
-
-### Prior Art
-
-- https://en.bitcoin.it/wiki/Wallet_protocol
-- https://en.wikipedia.org/wiki/Blind_signature
-- https://en.wikipedia.org/wiki/Ecash
-- https://github.com/btcontract/hosted-channels-rfc
-- https://lightweight.money
-- https://nopara73.medium.com/chaumian-e-cash-for-custodial-bitcoin-wallets-and-services-to-scale-bitcoin-8977d9a03064
-
 ## Disclaimer and Prolegomenon
 
 I know enough about cryptography to be dangerous, i.e. I have heard of private
@@ -84,3 +73,12 @@ Additionally, if users deposit and withdraw over the Lightning Network, privacy
 is probably even better. Users can perform routing-client side, so the
 custodian doesn't know the source or destination of funds, and can't make
 inferences based on on-chain addresses.
+
+### Prior Art and References
+
+- [Bitcoin Wiki: Wallet Protocol](https://en.bitcoin.it/wiki/Wallet_protocol)
+- [Wikipedia: Blind Signature](https://en.wikipedia.org/wiki/Blind_signature)
+- [Wikipedia: eCash](https://en.wikipedia.org/wiki/Ecash)
+- [Hosted Channels RFC](https://github.com/btcontract/hosted-channels-rfc)
+- [Danake](https://lightweight.money)
+- [Chaumian eCash for Custodial Bitcoin Wallets](https://nopara73.medium.com/chaumian-e-cash-for-custodial-bitcoin-wallets-and-services-to-scale-bitcoin-8977d9a03064)
