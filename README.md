@@ -1,7 +1,7 @@
-# Flex Wallet
+# Nice Wallet
 
 <!--ts-->
-* [Flex Wallet](#flex-wallet)
+* [Nice Wallet](#nice-wallet)
    * [Notes, To-Do, and Junk](#notes-to-do-and-junk)
       * [Prior Art](#prior-art)
       * [Notes](#notes)
@@ -83,7 +83,7 @@ The primary benefits of the architecture are:
 - unrealistic for normies to understand balance decrementing due to channel close/open fees, balance unavailable due to channel open/close, concept of inbound liquidity, need to stay online/trust watchtowers
 - service provider going out of business notice
 - white label wallet just binds to particular service provider
-- Flex wallet architecture / protocol / client
+- Nice wallet architecture / protocol / client
 
 ## Disclaimer and Prolegomenon
 
