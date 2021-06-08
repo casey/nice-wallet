@@ -1,5 +1,7 @@
 # Nice Wallet
 
+## Table of Contents
+
 <!--ts-->
 * [Nice Wallet](#nice-wallet)
    * [Notes, To-Do, and Junk](#notes-to-do-and-junk)
@@ -11,33 +13,53 @@
       * [Discussion](#discussion)
 <!--te-->
 
-This is a blog post about a hypothetical Bitcoin wallet architecture. It is not
-done.
+## Introduction
 
-The primary benefits of the architecture are:
+This document introduces a hypothetical Bitcoin wallet architecture.
+
+The two primary features of the architecture are:
 
 - Wallet frontends communicate with wallet backends using a standard protocol.
-  Backends can be non-custodial, custodial, or somewhere in between.
+
+- Wallet backends track user balances with an eCash-like blinded signature
+  scheme.
+
+In tandem, these features provide numerous benefits, including:
+
+- Backends can be non-custodial, custodial, or somewhere in between.
 
 - Wallet backends do not know how many users they have, or what their balances
   are.
 
-## Disclaimer and Prolegomenon
+- Many users may use a single wallet backend, making backends robust
+  against external surveillance. This is especially true when off-chain
+  payments are used, for example via the Lightning Network.
 
-I know enough about cryptography to be dangerous, i.e. I have heard of private
-keys and public keys, understand that curves are somehow involved.
+- Wallet frontends can be developed independently of wallet backends, increasing
+  competition between wallet frontend developers.
 
-I have also heard of eCash and blind signatures, and think that they provide
-the necessary properties to use as the basis for a wallet architecture with
-very nice properties.
+- Launching a backend provider service becomes straightforward, as only
+  standard infrastructure components need to be deployed and managed.
 
-However, I don't actually know the nitty-gritty details, so I might be totally
-wrong.
+- Users may switch backend providers, without changing their wallet frontend
+  and user interface, increasing competition between backend providers.
 
-As an invocation of Cunningham's Law, here is my current understanding, that I
-hope someone will correct or confirm, of two operations that eCash-like systems
-can provide. For the sake of concreteness, I use Bitcoin as the hypothetical
-currency, and interactions between a user and a custodian as the scenario.
+- Users may switch from a custodial backend provider to a self-hosted,
+  non-custodial backend, improving user sovereignty.
+
+## eCash
+
+[eCash](https://en.wikipedia.org/wiki/Ecash) was an anonymous cryptographic
+electronic cash system invent in 1983 by David Chaum which operated as a
+micropayment system at a US bank between 1995 and 1998.
+
+Although centralized, eCash had extremely attractive privacy properties, even
+when compared with more recently developed privacy-preserving cryptocurrencies,
+and, due to its centralization, eCash transactions can be performed quickly
+enough to be used at scale.
+
+Additionally, cryptographic techniques developed in the intervening years can
+enhance an eCash-like system's properties
 
 ### Deposits
 
